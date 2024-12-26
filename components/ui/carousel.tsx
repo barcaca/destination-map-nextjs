@@ -19,6 +19,8 @@ type CarouselProps = {
   plugins?: CarouselPlugin
   orientation?: 'horizontal' | 'vertical'
   setApi?: (api: CarouselApi) => void
+  autoPlay?: boolean
+  autoPlayInterval?: number
 }
 
 type CarouselContextProps = {
@@ -28,6 +30,8 @@ type CarouselContextProps = {
   scrollNext: () => void
   canScrollPrev: boolean
   canScrollNext: boolean
+  selectedIndex: number
+  scrollTo: (index: number) => void
 } & CarouselProps
 
 const CarouselContext = React.createContext<CarouselContextProps | null>(null)
@@ -54,6 +58,8 @@ const Carousel = React.forwardRef<
       plugins,
       className,
       children,
+      autoPlay = false,
+      autoPlayInterval = 3000,
       ...props
     },
     ref
@@ -67,6 +73,7 @@ const Carousel = React.forwardRef<
     )
     const [canScrollPrev, setCanScrollPrev] = React.useState(false)
     const [canScrollNext, setCanScrollNext] = React.useState(false)
+    const [selectedIndex, setSelectedIndex] = React.useState(0)
 
     const onSelect = React.useCallback((api: CarouselApi) => {
       if (!api) {
@@ -75,6 +82,7 @@ const Carousel = React.forwardRef<
 
       setCanScrollPrev(api.canScrollPrev())
       setCanScrollNext(api.canScrollNext())
+      setSelectedIndex(api.selectedScrollSnap())
     }, [])
 
     const scrollPrev = React.useCallback(() => {
@@ -96,6 +104,12 @@ const Carousel = React.forwardRef<
         }
       },
       [scrollPrev, scrollNext]
+    )
+    const scrollTo = React.useCallback(
+      (index: number) => {
+        api?.scrollTo(index)
+      },
+      [api]
     )
 
     React.useEffect(() => {
@@ -120,6 +134,16 @@ const Carousel = React.forwardRef<
       }
     }, [api, onSelect])
 
+    React.useEffect(() => {
+      if (!api || !autoPlay) return
+
+      const interval = setInterval(() => {
+        api.scrollNext()
+      }, autoPlayInterval)
+
+      return () => clearInterval(interval)
+    }, [api, autoPlay, autoPlayInterval])
+
     return (
       <CarouselContext.Provider
         value={{
@@ -130,19 +154,23 @@ const Carousel = React.forwardRef<
             orientation || (opts?.axis === 'y' ? 'vertical' : 'horizontal'),
           scrollPrev,
           scrollNext,
+          scrollTo,
+          selectedIndex,
           canScrollPrev,
           canScrollNext,
         }}
       >
-        <section
+        <div
           ref={ref}
           onKeyDownCapture={handleKeyDown}
           className={cn('relative', className)}
+          // biome-ignore lint/a11y/useSemanticElements: <explanation>
+          role="region"
           aria-roledescription="carousel"
           {...props}
         >
           {children}
-        </section>
+        </div>
       </CarouselContext.Provider>
     )
   }
@@ -251,9 +279,44 @@ const CarouselNext = React.forwardRef<
 })
 CarouselNext.displayName = 'CarouselNext'
 
+const CarouselDots = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => {
+  const { selectedIndex, scrollTo, api } = useCarousel()
+  return (
+    <div
+      ref={ref}
+      className={cn(
+        'absolute right-0 bottom-4 left-0 z-50 flex w-[calc(100vw-16px)] items-center justify-center gap-4',
+        className
+      )}
+      {...props}
+    >
+      {api?.scrollSnapList().map((_, index) => (
+        <Button
+          // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+          key={index}
+          variant={'outline'}
+          className={cn(
+            'h-4 w-4 rounded-full p-0',
+            index === selectedIndex ? '' : 'bg-primary/50'
+          )}
+          onClick={() => scrollTo(index)}
+          aria-label={`Slide ${index + 1}`}
+          aria-selected={index === selectedIndex}
+          role="tab"
+        />
+      ))}
+    </div>
+  )
+})
+CarouselDots.displayName = 'CarouselDots'
+
 export {
   Carousel,
   CarouselContent,
+  CarouselDots,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
