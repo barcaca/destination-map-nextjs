@@ -1,0 +1,58 @@
+import placeHolder from '@/public/placeholder-image.svg'
+import { HeartIcon } from 'lucide-react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { Button } from './button'
+
+const PlaceCard = () => {
+  const isFavorite = false
+  return (
+    <div className="group relative flex w-full overflow-hidden rounded-xl shadow-shape">
+      <div
+        className="absolute inset-0 z-10 bg-gradient-to-t from-black/80 via-black/30 to-transparent"
+        aria-hidden="true"
+      />
+      <div className="absolute top-2 right-2 z-40 flex flex-col space-y-2">
+        <Button
+          variant="ghost"
+          size="icon"
+          aria-label={
+            isFavorite ? 'Remover dos favoritos' : 'Adicionar aos favoritos'
+          }
+          className={`group/favorite h-8 w-8 rounded-full ${isFavorite ? 'bg-muted text-muted-foreground' : 'bg-muted/60 text-muted-foreground/50'} hover:bg-muted/90`}
+        >
+          <HeartIcon
+            className={
+              isFavorite
+                ? 'fill-current text-red-500'
+                : 'fill-current text-current group-hover/favorite:text-red-500'
+            }
+            aria-hidden="true"
+          />
+        </Button>
+        {/* TODO : Add edit and delete options when is created by user */}
+      </div>
+      <div className="relative aspect-[4/3] w-full rounded-md">
+        <Image
+          alt={'placeHolder'}
+          src={placeHolder}
+          fill
+          sizes="100%"
+          className="h-full object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+      </div>
+      <div className="absolute right-0 bottom-0 left-0 z-20 p-4">
+        <h3 className="mt-2 font-semibold text-background text-lg">Titulo</h3>
+        <p className="text-background/80 text-sm">CountryName , StateName</p>
+        <p className="mt-2 line-clamp-2 text-background/50 text-sm">
+          Descrição
+        </p>
+      </div>
+      <Link href={'/destino/'} className="absolute inset-0 z-30">
+        <span className="sr-only">Ver detalhes de Titulo</span>
+      </Link>
+    </div>
+  )
+}
+
+export { PlaceCard }
