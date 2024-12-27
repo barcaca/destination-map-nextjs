@@ -1,13 +1,10 @@
 import { PlaceCard } from '@/components/ui/place-card'
 import { Skeleton } from '@/components/ui/skeleton'
-import { BASE_URL } from '@/constants/base'
-import { ENDPOINTS } from '@/constants/endpoints'
+import { fetchPlaces } from '@/data/data-place'
 import { generateUniqueRandomNumbers } from '@/lib/utils'
 
 async function fetchRecommendations() {
-  const url = `${BASE_URL.REST}${ENDPOINTS.PLACES}?user_id=SYSTEM`
-  const response = await fetch(url)
-  const places = await response.json()
+  const places = await fetchPlaces()
   const randomPlaceIndexes = generateUniqueRandomNumbers(4, places.length)
   const recommendations = randomPlaceIndexes.map(i => places[i])
   return recommendations
