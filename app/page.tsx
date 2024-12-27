@@ -1,3 +1,17 @@
-export default function Home() {
-  return <div>Ola Mundo</div>
+import { Suspense } from 'react'
+import {
+  Recommendations,
+  RecommendationsSkeleton,
+} from './_components/recommendations'
+
+export default async function Home() {
+  return (
+    <div className="bg-background text-foreground">
+      <main className="space-y-16 py-16">
+        <Suspense fallback={<RecommendationsSkeleton />}>
+          <Recommendations />
+        </Suspense>
+      </main>
+    </div>
+  )
 }
