@@ -1,4 +1,5 @@
 import { Suspense } from 'react'
+import { ContinentsSkeleton, ContinentsWrapper } from './_components/continents'
 import {
   Recommendations,
   RecommendationsSkeleton,
@@ -10,6 +11,9 @@ export default async function Home() {
       <main className="space-y-16 py-16">
         <Suspense fallback={<RecommendationsSkeleton />}>
           <Recommendations />
+        </Suspense>
+        <Suspense fallback={<ContinentsSkeleton />}>
+          <ContinentsWrapper />
         </Suspense>
       </main>
     </div>
