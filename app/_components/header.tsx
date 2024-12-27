@@ -1,8 +1,8 @@
+import { Button } from '@/components/ui/button'
 import { PlusIcon } from 'lucide-react'
 import Link from 'next/link'
-import { Button } from '../../components/ui/button'
 
-export function Header() {
+const Header = () => {
   return (
     <header className="absolute top-0 z-50 w-full text-background">
       <div className="container mx-auto flex h-14 px-4 sm:px-6 lg:px-8">
@@ -34,3 +34,5 @@ export function Header() {
     </header>
   )
 }
+
+export { Header }

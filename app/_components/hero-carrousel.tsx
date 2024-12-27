@@ -30,7 +30,7 @@ const slides = [
   },
 ]
 
-export function HeroCarrousel() {
+const HeroCarrousel = () => {
   return (
     <div className="relative w-full" aria-label="Destaques do Destination Map">
       <Carousel opts={{ loop: true }} autoPlay autoPlayInterval={8000}>
@@ -66,3 +66,5 @@ export function HeroCarrousel() {
     </div>
   )
 }
+
+export { HeroCarrousel }

@@ -14,7 +14,7 @@ const socials = [
   },
 ]
 
-export function Footer() {
+const Footer = () => {
   return (
     <footer className="relative flex min-h-96 w-full items-end border-t bg-background">
       <div
@@ -48,3 +48,5 @@ export function Footer() {
     </footer>
   )
 }
+
+export { Footer }
