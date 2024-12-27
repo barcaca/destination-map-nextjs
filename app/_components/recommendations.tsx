@@ -37,7 +37,7 @@ const Recommendations = async () => {
             key={place.id}
             className="relative flex w-full flex-none flex-col"
           >
-            <PlaceCard />
+            <PlaceCard place={place} />
           </div>
         ))}
       </div>

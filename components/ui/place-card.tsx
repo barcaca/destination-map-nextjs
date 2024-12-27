@@ -1,11 +1,17 @@
 import placeHolder from '@/public/placeholder-image.svg'
+import type { Place } from '@/types/place'
 import { HeartIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from './button'
 
-const PlaceCard = () => {
+interface PlaceCardProps {
+  place: Place
+}
+
+const PlaceCard = ({ place }: PlaceCardProps) => {
   const isFavorite = false
+  const { location } = place
   return (
     <div className="group relative flex w-full overflow-hidden rounded-xl shadow-shape">
       <div
@@ -34,22 +40,26 @@ const PlaceCard = () => {
       </div>
       <div className="relative aspect-[4/3] w-full rounded-md">
         <Image
-          alt={'placeHolder'}
-          src={placeHolder}
+          alt={`Imagem de ${place.title}, ${location.country.name}`}
+          src={place.images[0]?.url || placeHolder}
           fill
           sizes="100%"
           className="h-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>
       <div className="absolute right-0 bottom-0 left-0 z-20 p-4">
-        <h3 className="mt-2 font-semibold text-background text-lg">Titulo</h3>
-        <p className="text-background/80 text-sm">CountryName , StateName</p>
+        <h3 className="mt-2 font-semibold text-background text-lg">
+          {place.title}
+        </h3>
+        <p className="text-background/80 text-sm">
+          {location.country.name}, {location.state.name}
+        </p>
         <p className="mt-2 line-clamp-2 text-background/50 text-sm">
-          Descrição
+          {place.description}
         </p>
       </div>
       <Link href={'/destino/'} className="absolute inset-0 z-30">
-        <span className="sr-only">Ver detalhes de Titulo</span>
+        <span className="sr-only">Ver detalhes de {place.title}</span>
       </Link>
     </div>
   )
