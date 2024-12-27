@@ -1,9 +1,9 @@
-import { Footer } from '@/app/_components/footer'
-import { Header } from '@/app/_components/header'
-import { HeroCarrousel } from '@/app/_components/hero-carrousel'
 import { happy_monkey, montserrat } from '@/fonts/font'
 import '@/styles/globals.css'
 import type { Metadata } from 'next'
+import { Footer } from './_components/footer'
+import { Header } from './_components/header'
+import { HeroCarrousel } from './_components/hero-carrousel'
 
 export const metadata: Metadata = {
   title: {
@@ -20,10 +20,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${happy_monkey.variable} ${montserrat.variable} h-full scroll-smooth antialiased`}
-      >
+    <html
+      lang="en"
+      className={`${happy_monkey.variable} ${montserrat.variable} h-full scroll-smooth`}
+    >
+      <body className="flex h-full w-full flex-col">
         <Header />
         <HeroCarrousel />
         {children}
