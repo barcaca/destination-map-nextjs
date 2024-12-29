@@ -1,0 +1,1502 @@
+[
+  {
+    "id": 1,
+    "name": "Afghanistan",
+    "region_id": 3,
+    "translations": { "pt-BR": "Afeganistão" }
+  },
+  {
+    "id": 2,
+    "name": "Aland Islands",
+    "region_id": 4,
+    "translations": { "pt-BR": "Ilhas de Aland" }
+  },
+  {
+    "id": 3,
+    "name": "Albania",
+    "region_id": 4,
+    "translations": { "pt-BR": "Albânia" }
+  },
+  {
+    "id": 4,
+    "name": "Algeria",
+    "region_id": 1,
+    "translations": { "pt-BR": "Argélia" }
+  },
+  {
+    "id": 5,
+    "name": "American Samoa",
+    "region_id": 5,
+    "translations": { "pt-BR": "Samoa Americana" }
+  },
+  {
+    "id": 6,
+    "name": "Andorra",
+    "region_id": 4,
+    "translations": { "pt-BR": "Andorra" }
+  },
+  {
+    "id": 7,
+    "name": "Angola",
+    "region_id": 1,
+    "translations": { "pt-BR": "Angola" }
+  },
+  {
+    "id": 8,
+    "name": "Anguilla",
+    "region_id": 2,
+    "translations": { "pt-BR": "Anguila" }
+  },
+  {
+    "id": 9,
+    "name": "Antarctica",
+    "region_id": 6,
+    "translations": { "pt-BR": "Antártida" }
+  },
+  {
+    "id": 10,
+    "name": "Antigua and Barbuda",
+    "region_id": 2,
+    "translations": { "pt-BR": "Antígua e Barbuda" }
+  },
+  {
+    "id": 11,
+    "name": "Argentina",
+    "region_id": 2,
+    "translations": { "pt-BR": "Argentina" }
+  },
+  {
+    "id": 12,
+    "name": "Armenia",
+    "region_id": 3,
+    "translations": { "pt-BR": "Armênia" }
+  },
+  {
+    "id": 13,
+    "name": "Aruba",
+    "region_id": 2,
+    "translations": { "pt-BR": "Aruba" }
+  },
+  {
+    "id": 14,
+    "name": "Australia",
+    "region_id": 5,
+    "translations": { "pt-BR": "Austrália" }
+  },
+  {
+    "id": 15,
+    "name": "Austria",
+    "region_id": 4,
+    "translations": { "pt-BR": "áustria" }
+  },
+  {
+    "id": 16,
+    "name": "Azerbaijan",
+    "region_id": 3,
+    "translations": { "pt-BR": "Azerbaijão" }
+  },
+  {
+    "id": 18,
+    "name": "Bahrain",
+    "region_id": 3,
+    "translations": { "pt-BR": "Bahrein" }
+  },
+  {
+    "id": 19,
+    "name": "Bangladesh",
+    "region_id": 3,
+    "translations": { "pt-BR": "Bangladesh" }
+  },
+  {
+    "id": 20,
+    "name": "Barbados",
+    "region_id": 2,
+    "translations": { "pt-BR": "Barbados" }
+  },
+  {
+    "id": 21,
+    "name": "Belarus",
+    "region_id": 4,
+    "translations": { "pt-BR": "Bielorrússia" }
+  },
+  {
+    "id": 22,
+    "name": "Belgium",
+    "region_id": 4,
+    "translations": { "pt-BR": "Bélgica" }
+  },
+  {
+    "id": 23,
+    "name": "Belize",
+    "region_id": 2,
+    "translations": { "pt-BR": "Belize" }
+  },
+  {
+    "id": 24,
+    "name": "Benin",
+    "region_id": 1,
+    "translations": { "pt-BR": "Benin" }
+  },
+  {
+    "id": 25,
+    "name": "Bermuda",
+    "region_id": 2,
+    "translations": { "pt-BR": "Bermudas" }
+  },
+  {
+    "id": 26,
+    "name": "Bhutan",
+    "region_id": 3,
+    "translations": { "pt-BR": "Butão" }
+  },
+  {
+    "id": 27,
+    "name": "Bolivia",
+    "region_id": 2,
+    "translations": { "pt-BR": "Bolívia" }
+  },
+  {
+    "id": 155,
+    "name": "Bonaire, Sint Eustatius and Saba",
+    "region_id": 2,
+    "translations": { "pt-BR": "Bonaire" }
+  },
+  {
+    "id": 28,
+    "name": "Bosnia and Herzegovina",
+    "region_id": 4,
+    "translations": { "pt-BR": "Bósnia e Herzegovina" }
+  },
+  {
+    "id": 29,
+    "name": "Botswana",
+    "region_id": 1,
+    "translations": { "pt-BR": "Botsuana" }
+  },
+  {
+    "id": 30,
+    "name": "Bouvet Island",
+    "region_id": 4,
+    "translations": { "pt-BR": "Ilha Bouvet" }
+  },
+  {
+    "id": 31,
+    "name": "Brazil",
+    "region_id": 2,
+    "translations": { "pt-BR": "Brasil" }
+  },
+  {
+    "id": 32,
+    "name": "British Indian Ocean Territory",
+    "region_id": 1,
+    "translations": { "pt-BR": "Território Britânico do Oceano íÍdico" }
+  },
+  {
+    "id": 33,
+    "name": "Brunei",
+    "region_id": 3,
+    "translations": { "pt-BR": "Brunei" }
+  },
+  {
+    "id": 34,
+    "name": "Bulgaria",
+    "region_id": 4,
+    "translations": { "pt-BR": "Bulgária" }
+  },
+  {
+    "id": 35,
+    "name": "Burkina Faso",
+    "region_id": 1,
+    "translations": { "pt-BR": "Burkina Faso" }
+  },
+  {
+    "id": 36,
+    "name": "Burundi",
+    "region_id": 1,
+    "translations": { "pt-BR": "Burundi" }
+  },
+  {
+    "id": 37,
+    "name": "Cambodia",
+    "region_id": 3,
+    "translations": { "pt-BR": "Camboja" }
+  },
+  {
+    "id": 38,
+    "name": "Cameroon",
+    "region_id": 1,
+    "translations": { "pt-BR": "Camarões" }
+  },
+  {
+    "id": 39,
+    "name": "Canada",
+    "region_id": 2,
+    "translations": { "pt-BR": "Canadá" }
+  },
+  {
+    "id": 40,
+    "name": "Cape Verde",
+    "region_id": 1,
+    "translations": { "pt-BR": "Cabo Verde" }
+  },
+  {
+    "id": 41,
+    "name": "Cayman Islands",
+    "region_id": 2,
+    "translations": { "pt-BR": "Ilhas Cayman" }
+  },
+  {
+    "id": 42,
+    "name": "Central African Republic",
+    "region_id": 1,
+    "translations": { "pt-BR": "República Centro-Africana" }
+  },
+  {
+    "id": 43,
+    "name": "Chad",
+    "region_id": 1,
+    "translations": { "pt-BR": "Chade" }
+  },
+  {
+    "id": 44,
+    "name": "Chile",
+    "region_id": 2,
+    "translations": { "pt-BR": "Chile" }
+  },
+  {
+    "id": 45,
+    "name": "China",
+    "region_id": 3,
+    "translations": { "pt-BR": "China" }
+  },
+  {
+    "id": 46,
+    "name": "Christmas Island",
+    "region_id": 5,
+    "translations": { "pt-BR": "Ilha Christmas" }
+  },
+  {
+    "id": 47,
+    "name": "Cocos (Keeling) Islands",
+    "region_id": 5,
+    "translations": { "pt-BR": "Ilhas Cocos" }
+  },
+  {
+    "id": 48,
+    "name": "Colombia",
+    "region_id": 2,
+    "translations": { "pt-BR": "Colômbia" }
+  },
+  {
+    "id": 49,
+    "name": "Comoros",
+    "region_id": 1,
+    "translations": { "pt-BR": "Comores" }
+  },
+  {
+    "id": 50,
+    "name": "Congo",
+    "region_id": 1,
+    "translations": { "pt-BR": "Congo" }
+  },
+  {
+    "id": 52,
+    "name": "Cook Islands",
+    "region_id": 5,
+    "translations": { "pt-BR": "Ilhas Cook" }
+  },
+  {
+    "id": 53,
+    "name": "Costa Rica",
+    "region_id": 2,
+    "translations": { "pt-BR": "Costa Rica" }
+  },
+  {
+    "id": 54,
+    "name": "Cote D'Ivoire (Ivory Coast)",
+    "region_id": 1,
+    "translations": { "pt-BR": "Costa do Marfim" }
+  },
+  {
+    "id": 55,
+    "name": "Croatia",
+    "region_id": 4,
+    "translations": { "pt-BR": "Croácia" }
+  },
+  {
+    "id": 56,
+    "name": "Cuba",
+    "region_id": 2,
+    "translations": { "pt-BR": "Cuba" }
+  },
+  {
+    "id": 249,
+    "name": "Curaçao",
+    "region_id": 2,
+    "translations": { "pt-BR": "Curaçao" }
+  },
+  {
+    "id": 57,
+    "name": "Cyprus",
+    "region_id": 4,
+    "translations": { "pt-BR": "Chipre" }
+  },
+  {
+    "id": 58,
+    "name": "Czech Republic",
+    "region_id": 4,
+    "translations": { "pt-BR": "República Tcheca" }
+  },
+  {
+    "id": 51,
+    "name": "Democratic Republic of the Congo",
+    "region_id": 1,
+    "translations": { "pt-BR": "RD Congo" }
+  },
+  {
+    "id": 59,
+    "name": "Denmark",
+    "region_id": 4,
+    "translations": { "pt-BR": "Dinamarca" }
+  },
+  {
+    "id": 60,
+    "name": "Djibouti",
+    "region_id": 1,
+    "translations": { "pt-BR": "Djibuti" }
+  },
+  {
+    "id": 61,
+    "name": "Dominica",
+    "region_id": 2,
+    "translations": { "pt-BR": "Dominica" }
+  },
+  {
+    "id": 62,
+    "name": "Dominican Republic",
+    "region_id": 2,
+    "translations": { "pt-BR": "República Dominicana" }
+  },
+  {
+    "id": 64,
+    "name": "Ecuador",
+    "region_id": 2,
+    "translations": { "pt-BR": "Equador" }
+  },
+  {
+    "id": 65,
+    "name": "Egypt",
+    "region_id": 1,
+    "translations": { "pt-BR": "Egito" }
+  },
+  {
+    "id": 66,
+    "name": "El Salvador",
+    "region_id": 2,
+    "translations": { "pt-BR": "El Salvador" }
+  },
+  {
+    "id": 67,
+    "name": "Equatorial Guinea",
+    "region_id": 1,
+    "translations": { "pt-BR": "Guiné Equatorial" }
+  },
+  {
+    "id": 68,
+    "name": "Eritrea",
+    "region_id": 1,
+    "translations": { "pt-BR": "Eritreia" }
+  },
+  {
+    "id": 69,
+    "name": "Estonia",
+    "region_id": 4,
+    "translations": { "pt-BR": "Estônia" }
+  },
+  {
+    "id": 212,
+    "name": "Eswatini",
+    "region_id": 1,
+    "translations": { "pt-BR": "Suazilândia" }
+  },
+  {
+    "id": 70,
+    "name": "Ethiopia",
+    "region_id": 1,
+    "translations": { "pt-BR": "Etiópia" }
+  },
+  {
+    "id": 71,
+    "name": "Falkland Islands",
+    "region_id": 2,
+    "translations": { "pt-BR": "Ilhas Malvinas" }
+  },
+  {
+    "id": 72,
+    "name": "Faroe Islands",
+    "region_id": 4,
+    "translations": { "pt-BR": "Ilhas Faroé" }
+  },
+  {
+    "id": 73,
+    "name": "Fiji Islands",
+    "region_id": 5,
+    "translations": { "pt-BR": "Fiji" }
+  },
+  {
+    "id": 74,
+    "name": "Finland",
+    "region_id": 4,
+    "translations": { "pt-BR": "Finlândia" }
+  },
+  {
+    "id": 75,
+    "name": "France",
+    "region_id": 4,
+    "translations": { "pt-BR": "França" }
+  },
+  {
+    "id": 76,
+    "name": "French Guiana",
+    "region_id": 2,
+    "translations": { "pt-BR": "Guiana Francesa" }
+  },
+  {
+    "id": 77,
+    "name": "French Polynesia",
+    "region_id": 5,
+    "translations": { "pt-BR": "Polinésia Francesa" }
+  },
+  {
+    "id": 78,
+    "name": "French Southern Territories",
+    "region_id": 1,
+    "translations": { "pt-BR": "Terras Austrais e Antárticas Francesas" }
+  },
+  {
+    "id": 79,
+    "name": "Gabon",
+    "region_id": 1,
+    "translations": { "pt-BR": "Gabão" }
+  },
+  {
+    "id": 81,
+    "name": "Georgia",
+    "region_id": 3,
+    "translations": { "pt-BR": "Geórgia" }
+  },
+  {
+    "id": 82,
+    "name": "Germany",
+    "region_id": 4,
+    "translations": { "pt-BR": "Alemanha" }
+  },
+  {
+    "id": 83,
+    "name": "Ghana",
+    "region_id": 1,
+    "translations": { "pt-BR": "Gana" }
+  },
+  {
+    "id": 84,
+    "name": "Gibraltar",
+    "region_id": 4,
+    "translations": { "pt-BR": "Gibraltar" }
+  },
+  {
+    "id": 85,
+    "name": "Greece",
+    "region_id": 4,
+    "translations": { "pt-BR": "Grécia" }
+  },
+  {
+    "id": 86,
+    "name": "Greenland",
+    "region_id": 2,
+    "translations": { "pt-BR": "Groelândia" }
+  },
+  {
+    "id": 87,
+    "name": "Grenada",
+    "region_id": 2,
+    "translations": { "pt-BR": "Granada" }
+  },
+  {
+    "id": 88,
+    "name": "Guadeloupe",
+    "region_id": 2,
+    "translations": { "pt-BR": "Guadalupe" }
+  },
+  {
+    "id": 89,
+    "name": "Guam",
+    "region_id": 5,
+    "translations": { "pt-BR": "Guam" }
+  },
+  {
+    "id": 90,
+    "name": "Guatemala",
+    "region_id": 2,
+    "translations": { "pt-BR": "Guatemala" }
+  },
+  {
+    "id": 91,
+    "name": "Guernsey and Alderney",
+    "region_id": 4,
+    "translations": { "pt-BR": "Guernsey" }
+  },
+  {
+    "id": 92,
+    "name": "Guinea",
+    "region_id": 1,
+    "translations": { "pt-BR": "Guiné" }
+  },
+  {
+    "id": 93,
+    "name": "Guinea-Bissau",
+    "region_id": 1,
+    "translations": { "pt-BR": "Guiné-Bissau" }
+  },
+  {
+    "id": 94,
+    "name": "Guyana",
+    "region_id": 2,
+    "translations": { "pt-BR": "Guiana" }
+  },
+  {
+    "id": 95,
+    "name": "Haiti",
+    "region_id": 2,
+    "translations": { "pt-BR": "Haiti" }
+  },
+  {
+    "id": 96,
+    "name": "Heard Island and McDonald Islands",
+    "region_id": 5,
+    "translations": { "pt-BR": "Ilha Heard e Ilhas McDonald" }
+  },
+  {
+    "id": 97,
+    "name": "Honduras",
+    "region_id": 2,
+    "translations": { "pt-BR": "Honduras" }
+  },
+  {
+    "id": 98,
+    "name": "Hong Kong S.A.R.",
+    "region_id": 3,
+    "translations": { "pt-BR": "Hong Kong" }
+  },
+  {
+    "id": 99,
+    "name": "Hungary",
+    "region_id": 4,
+    "translations": { "pt-BR": "Hungria" }
+  },
+  {
+    "id": 100,
+    "name": "Iceland",
+    "region_id": 4,
+    "translations": { "pt-BR": "Islândia" }
+  },
+  {
+    "id": 101,
+    "name": "India",
+    "region_id": 3,
+    "translations": { "pt-BR": "Índia" }
+  },
+  {
+    "id": 102,
+    "name": "Indonesia",
+    "region_id": 3,
+    "translations": { "pt-BR": "Indonésia" }
+  },
+  {
+    "id": 103,
+    "name": "Iran",
+    "region_id": 3,
+    "translations": { "pt-BR": "Irã" }
+  },
+  {
+    "id": 104,
+    "name": "Iraq",
+    "region_id": 3,
+    "translations": { "pt-BR": "Iraque" }
+  },
+  {
+    "id": 105,
+    "name": "Ireland",
+    "region_id": 4,
+    "translations": { "pt-BR": "Irlanda" }
+  },
+  {
+    "id": 106,
+    "name": "Israel",
+    "region_id": 3,
+    "translations": { "pt-BR": "Israel" }
+  },
+  {
+    "id": 107,
+    "name": "Italy",
+    "region_id": 4,
+    "translations": { "pt-BR": "Itália" }
+  },
+  {
+    "id": 108,
+    "name": "Jamaica",
+    "region_id": 2,
+    "translations": { "pt-BR": "Jamaica" }
+  },
+  {
+    "id": 109,
+    "name": "Japan",
+    "region_id": 3,
+    "translations": { "pt-BR": "Japão" }
+  },
+  {
+    "id": 110,
+    "name": "Jersey",
+    "region_id": 4,
+    "translations": { "pt-BR": "Jersey" }
+  },
+  {
+    "id": 111,
+    "name": "Jordan",
+    "region_id": 3,
+    "translations": { "pt-BR": "Jordânia" }
+  },
+  {
+    "id": 112,
+    "name": "Kazakhstan",
+    "region_id": 3,
+    "translations": { "pt-BR": "Cazaquistão" }
+  },
+  {
+    "id": 113,
+    "name": "Kenya",
+    "region_id": 1,
+    "translations": { "pt-BR": "Quênia" }
+  },
+  {
+    "id": 114,
+    "name": "Kiribati",
+    "region_id": 5,
+    "translations": { "pt-BR": "Kiribati" }
+  },
+  {
+    "id": 248,
+    "name": "Kosovo",
+    "region_id": 4,
+    "translations": { "pt-BR": "Kosovo" }
+  },
+  {
+    "id": 117,
+    "name": "Kuwait",
+    "region_id": 3,
+    "translations": { "pt-BR": "Kuwait" }
+  },
+  {
+    "id": 118,
+    "name": "Kyrgyzstan",
+    "region_id": 3,
+    "translations": { "pt-BR": "Quirguistão" }
+  },
+  {
+    "id": 119,
+    "name": "Laos",
+    "region_id": 3,
+    "translations": { "pt-BR": "Laos" }
+  },
+  {
+    "id": 120,
+    "name": "Latvia",
+    "region_id": 4,
+    "translations": { "pt-BR": "Letônia" }
+  },
+  {
+    "id": 121,
+    "name": "Lebanon",
+    "region_id": 3,
+    "translations": { "pt-BR": "Líbano" }
+  },
+  {
+    "id": 122,
+    "name": "Lesotho",
+    "region_id": 1,
+    "translations": { "pt-BR": "Lesoto" }
+  },
+  {
+    "id": 123,
+    "name": "Liberia",
+    "region_id": 1,
+    "translations": { "pt-BR": "Libéria" }
+  },
+  {
+    "id": 124,
+    "name": "Libya",
+    "region_id": 1,
+    "translations": { "pt-BR": "Líbia" }
+  },
+  {
+    "id": 125,
+    "name": "Liechtenstein",
+    "region_id": 4,
+    "translations": { "pt-BR": "Liechtenstein" }
+  },
+  {
+    "id": 126,
+    "name": "Lithuania",
+    "region_id": 4,
+    "translations": { "pt-BR": "Lituânia" }
+  },
+  {
+    "id": 127,
+    "name": "Luxembourg",
+    "region_id": 4,
+    "translations": { "pt-BR": "Luxemburgo" }
+  },
+  {
+    "id": 128,
+    "name": "Macau S.A.R.",
+    "region_id": 3,
+    "translations": { "pt-BR": "Macau" }
+  },
+  {
+    "id": 130,
+    "name": "Madagascar",
+    "region_id": 1,
+    "translations": { "pt-BR": "Madagascar" }
+  },
+  {
+    "id": 131,
+    "name": "Malawi",
+    "region_id": 1,
+    "translations": { "pt-BR": "Malawi" }
+  },
+  {
+    "id": 132,
+    "name": "Malaysia",
+    "region_id": 3,
+    "translations": { "pt-BR": "Malásia" }
+  },
+  {
+    "id": 133,
+    "name": "Maldives",
+    "region_id": 3,
+    "translations": { "pt-BR": "Maldivas" }
+  },
+  {
+    "id": 134,
+    "name": "Mali",
+    "region_id": 1,
+    "translations": { "pt-BR": "Mali" }
+  },
+  {
+    "id": 135,
+    "name": "Malta",
+    "region_id": 4,
+    "translations": { "pt-BR": "Malta" }
+  },
+  {
+    "id": 136,
+    "name": "Man (Isle of)",
+    "region_id": 4,
+    "translations": { "pt-BR": "Ilha de Man" }
+  },
+  {
+    "id": 137,
+    "name": "Marshall Islands",
+    "region_id": 5,
+    "translations": { "pt-BR": "Ilhas Marshall" }
+  },
+  {
+    "id": 138,
+    "name": "Martinique",
+    "region_id": 2,
+    "translations": { "pt-BR": "Martinica" }
+  },
+  {
+    "id": 139,
+    "name": "Mauritania",
+    "region_id": 1,
+    "translations": { "pt-BR": "Mauritânia" }
+  },
+  {
+    "id": 140,
+    "name": "Mauritius",
+    "region_id": 1,
+    "translations": { "pt-BR": "Maurício" }
+  },
+  {
+    "id": 141,
+    "name": "Mayotte",
+    "region_id": 1,
+    "translations": { "pt-BR": "Mayotte" }
+  },
+  {
+    "id": 142,
+    "name": "Mexico",
+    "region_id": 2,
+    "translations": { "pt-BR": "México" }
+  },
+  {
+    "id": 143,
+    "name": "Micronesia",
+    "region_id": 5,
+    "translations": { "pt-BR": "Micronésia" }
+  },
+  {
+    "id": 144,
+    "name": "Moldova",
+    "region_id": 4,
+    "translations": { "pt-BR": "Moldávia" }
+  },
+  {
+    "id": 145,
+    "name": "Monaco",
+    "region_id": 4,
+    "translations": { "pt-BR": "Mônaco" }
+  },
+  {
+    "id": 146,
+    "name": "Mongolia",
+    "region_id": 3,
+    "translations": { "pt-BR": "Mongólia" }
+  },
+  {
+    "id": 147,
+    "name": "Montenegro",
+    "region_id": 4,
+    "translations": { "pt-BR": "Montenegro" }
+  },
+  {
+    "id": 148,
+    "name": "Montserrat",
+    "region_id": 2,
+    "translations": { "pt-BR": "Montserrat" }
+  },
+  {
+    "id": 149,
+    "name": "Morocco",
+    "region_id": 1,
+    "translations": { "pt-BR": "Marrocos" }
+  },
+  {
+    "id": 150,
+    "name": "Mozambique",
+    "region_id": 1,
+    "translations": { "pt-BR": "Moçambique" }
+  },
+  {
+    "id": 151,
+    "name": "Myanmar",
+    "region_id": 3,
+    "translations": { "pt-BR": "Myanmar" }
+  },
+  {
+    "id": 152,
+    "name": "Namibia",
+    "region_id": 1,
+    "translations": { "pt-BR": "Namíbia" }
+  },
+  {
+    "id": 153,
+    "name": "Nauru",
+    "region_id": 5,
+    "translations": { "pt-BR": "Nauru" }
+  },
+  {
+    "id": 154,
+    "name": "Nepal",
+    "region_id": 3,
+    "translations": { "pt-BR": "Nepal" }
+  },
+  {
+    "id": 156,
+    "name": "Netherlands",
+    "region_id": 4,
+    "translations": { "pt-BR": "Holanda" }
+  },
+  {
+    "id": 157,
+    "name": "New Caledonia",
+    "region_id": 5,
+    "translations": { "pt-BR": "Nova Caledônia" }
+  },
+  {
+    "id": 158,
+    "name": "New Zealand",
+    "region_id": 5,
+    "translations": { "pt-BR": "Nova Zelândia" }
+  },
+  {
+    "id": 159,
+    "name": "Nicaragua",
+    "region_id": 2,
+    "translations": { "pt-BR": "Nicarágua" }
+  },
+  {
+    "id": 160,
+    "name": "Niger",
+    "region_id": 1,
+    "translations": { "pt-BR": "Níger" }
+  },
+  {
+    "id": 161,
+    "name": "Nigeria",
+    "region_id": 1,
+    "translations": { "pt-BR": "Nigéria" }
+  },
+  {
+    "id": 162,
+    "name": "Niue",
+    "region_id": 5,
+    "translations": { "pt-BR": "Niue" }
+  },
+  {
+    "id": 163,
+    "name": "Norfolk Island",
+    "region_id": 5,
+    "translations": { "pt-BR": "Ilha Norfolk" }
+  },
+  {
+    "id": 115,
+    "name": "North Korea",
+    "region_id": 3,
+    "translations": { "pt-BR": "Coreia do Norte" }
+  },
+  {
+    "id": 129,
+    "name": "North Macedonia",
+    "region_id": 4,
+    "translations": { "pt-BR": "Macedônia do Norte" }
+  },
+  {
+    "id": 164,
+    "name": "Northern Mariana Islands",
+    "region_id": 5,
+    "translations": { "pt-BR": "Ilhas Marianas" }
+  },
+  {
+    "id": 165,
+    "name": "Norway",
+    "region_id": 4,
+    "translations": { "pt-BR": "Noruega" }
+  },
+  {
+    "id": 166,
+    "name": "Oman",
+    "region_id": 3,
+    "translations": { "pt-BR": "Omã" }
+  },
+  {
+    "id": 167,
+    "name": "Pakistan",
+    "region_id": 3,
+    "translations": { "pt-BR": "Paquistão" }
+  },
+  {
+    "id": 168,
+    "name": "Palau",
+    "region_id": 5,
+    "translations": { "pt-BR": "Palau" }
+  },
+  {
+    "id": 169,
+    "name": "Palestinian Territory Occupied",
+    "region_id": 3,
+    "translations": { "pt-BR": "Palestina" }
+  },
+  {
+    "id": 170,
+    "name": "Panama",
+    "region_id": 2,
+    "translations": { "pt-BR": "Panamá" }
+  },
+  {
+    "id": 171,
+    "name": "Papua New Guinea",
+    "region_id": 5,
+    "translations": { "pt-BR": "Papua Nova Guiné" }
+  },
+  {
+    "id": 172,
+    "name": "Paraguay",
+    "region_id": 2,
+    "translations": { "pt-BR": "Paraguai" }
+  },
+  {
+    "id": 173,
+    "name": "Peru",
+    "region_id": 2,
+    "translations": { "pt-BR": "Peru" }
+  },
+  {
+    "id": 174,
+    "name": "Philippines",
+    "region_id": 3,
+    "translations": { "pt-BR": "Filipinas" }
+  },
+  {
+    "id": 175,
+    "name": "Pitcairn Island",
+    "region_id": 5,
+    "translations": { "pt-BR": "Ilhas Pitcairn" }
+  },
+  {
+    "id": 176,
+    "name": "Poland",
+    "region_id": 4,
+    "translations": { "pt-BR": "Polônia" }
+  },
+  {
+    "id": 177,
+    "name": "Portugal",
+    "region_id": 4,
+    "translations": { "pt-BR": "Portugal" }
+  },
+  {
+    "id": 178,
+    "name": "Puerto Rico",
+    "region_id": 2,
+    "translations": { "pt-BR": "Porto Rico" }
+  },
+  {
+    "id": 179,
+    "name": "Qatar",
+    "region_id": 3,
+    "translations": { "pt-BR": "Catar" }
+  },
+  {
+    "id": 180,
+    "name": "Reunion",
+    "region_id": 1,
+    "translations": { "pt-BR": "Reunião" }
+  },
+  {
+    "id": 181,
+    "name": "Romania",
+    "region_id": 4,
+    "translations": { "pt-BR": "Romênia" }
+  },
+  {
+    "id": 182,
+    "name": "Russia",
+    "region_id": 4,
+    "translations": { "pt-BR": "Rússia" }
+  },
+  {
+    "id": 183,
+    "name": "Rwanda",
+    "region_id": 1,
+    "translations": { "pt-BR": "Ruanda" }
+  },
+  {
+    "id": 184,
+    "name": "Saint Helena",
+    "region_id": 1,
+    "translations": { "pt-BR": "Santa Helena" }
+  },
+  {
+    "id": 185,
+    "name": "Saint Kitts and Nevis",
+    "region_id": 2,
+    "translations": { "pt-BR": "São Cristóvão e Neves" }
+  },
+  {
+    "id": 186,
+    "name": "Saint Lucia",
+    "region_id": 2,
+    "translations": { "pt-BR": "Santa Lúcia" }
+  },
+  {
+    "id": 187,
+    "name": "Saint Pierre and Miquelon",
+    "region_id": 2,
+    "translations": { "pt-BR": "Saint-Pierre e Miquelon" }
+  },
+  {
+    "id": 188,
+    "name": "Saint Vincent and the Grenadines",
+    "region_id": 2,
+    "translations": { "pt-BR": "São Vicente e Granadinas" }
+  },
+  {
+    "id": 189,
+    "name": "Saint-Barthelemy",
+    "region_id": 2,
+    "translations": { "pt-BR": "São Bartolomeu" }
+  },
+  {
+    "id": 190,
+    "name": "Saint-Martin (French part)",
+    "region_id": 2,
+    "translations": { "pt-BR": "Saint Martin" }
+  },
+  {
+    "id": 191,
+    "name": "Samoa",
+    "region_id": 5,
+    "translations": { "pt-BR": "Samoa" }
+  },
+  {
+    "id": 192,
+    "name": "San Marino",
+    "region_id": 4,
+    "translations": { "pt-BR": "San Marino" }
+  },
+  {
+    "id": 193,
+    "name": "Sao Tome and Principe",
+    "region_id": 1,
+    "translations": { "pt-BR": "São Tomé e Príncipe" }
+  },
+  {
+    "id": 194,
+    "name": "Saudi Arabia",
+    "region_id": 3,
+    "translations": { "pt-BR": "Arábia Saudita" }
+  },
+  {
+    "id": 195,
+    "name": "Senegal",
+    "region_id": 1,
+    "translations": { "pt-BR": "Senegal" }
+  },
+  {
+    "id": 196,
+    "name": "Serbia",
+    "region_id": 4,
+    "translations": { "pt-BR": "Sérvia" }
+  },
+  {
+    "id": 197,
+    "name": "Seychelles",
+    "region_id": 1,
+    "translations": { "pt-BR": "Seicheles" }
+  },
+  {
+    "id": 198,
+    "name": "Sierra Leone",
+    "region_id": 1,
+    "translations": { "pt-BR": "Serra Leoa" }
+  },
+  {
+    "id": 199,
+    "name": "Singapore",
+    "region_id": 3,
+    "translations": { "pt-BR": "Singapura" }
+  },
+  {
+    "id": 250,
+    "name": "Sint Maarten (Dutch part)",
+    "region_id": 2,
+    "translations": { "pt-BR": "Sint Maarten" }
+  },
+  {
+    "id": 200,
+    "name": "Slovakia",
+    "region_id": 4,
+    "translations": { "pt-BR": "Eslováquia" }
+  },
+  {
+    "id": 201,
+    "name": "Slovenia",
+    "region_id": 4,
+    "translations": { "pt-BR": "Eslovênia" }
+  },
+  {
+    "id": 202,
+    "name": "Solomon Islands",
+    "region_id": 5,
+    "translations": { "pt-BR": "Ilhas Salomão" }
+  },
+  {
+    "id": 203,
+    "name": "Somalia",
+    "region_id": 1,
+    "translations": { "pt-BR": "Somália" }
+  },
+  {
+    "id": 204,
+    "name": "South Africa",
+    "region_id": 1,
+    "translations": { "pt-BR": "República Sul-Africana" }
+  },
+  {
+    "id": 205,
+    "name": "South Georgia",
+    "region_id": 2,
+    "translations": { "pt-BR": "Ilhas Geórgias do Sul e Sandwich do Sul" }
+  },
+  {
+    "id": 116,
+    "name": "South Korea",
+    "region_id": 3,
+    "translations": { "pt-BR": "Coreia do Sul" }
+  },
+  {
+    "id": 206,
+    "name": "South Sudan",
+    "region_id": 1,
+    "translations": { "pt-BR": "Sudão do Sul" }
+  },
+  {
+    "id": 207,
+    "name": "Spain",
+    "region_id": 4,
+    "translations": { "pt-BR": "Espanha" }
+  },
+  {
+    "id": 208,
+    "name": "Sri Lanka",
+    "region_id": 3,
+    "translations": { "pt-BR": "Sri Lanka" }
+  },
+  {
+    "id": 209,
+    "name": "Sudan",
+    "region_id": 1,
+    "translations": { "pt-BR": "Sudão" }
+  },
+  {
+    "id": 210,
+    "name": "Suriname",
+    "region_id": 2,
+    "translations": { "pt-BR": "Suriname" }
+  },
+  {
+    "id": 211,
+    "name": "Svalbard and Jan Mayen Islands",
+    "region_id": 4,
+    "translations": { "pt-BR": "Svalbard" }
+  },
+  {
+    "id": 213,
+    "name": "Sweden",
+    "region_id": 4,
+    "translations": { "pt-BR": "Suécia" }
+  },
+  {
+    "id": 214,
+    "name": "Switzerland",
+    "region_id": 4,
+    "translations": { "pt-BR": "Suíça" }
+  },
+  {
+    "id": 215,
+    "name": "Syria",
+    "region_id": 3,
+    "translations": { "pt-BR": "Síria" }
+  },
+  {
+    "id": 216,
+    "name": "Taiwan",
+    "region_id": 3,
+    "translations": { "pt-BR": "Taiwan" }
+  },
+  {
+    "id": 217,
+    "name": "Tajikistan",
+    "region_id": 3,
+    "translations": { "pt-BR": "Tajiquistão" }
+  },
+  {
+    "id": 218,
+    "name": "Tanzania",
+    "region_id": 1,
+    "translations": { "pt-BR": "Tanzânia" }
+  },
+  {
+    "id": 219,
+    "name": "Thailand",
+    "region_id": 3,
+    "translations": { "pt-BR": "Tailândia" }
+  },
+  {
+    "id": 17,
+    "name": "The Bahamas",
+    "region_id": 2,
+    "translations": { "pt-BR": "Bahamas" }
+  },
+  {
+    "id": 80,
+    "name": "The Gambia ",
+    "region_id": 1,
+    "translations": { "pt-BR": "Gâmbia" }
+  },
+  {
+    "id": 63,
+    "name": "Timor-Leste",
+    "region_id": 3,
+    "translations": { "pt-BR": "Timor Leste" }
+  },
+  {
+    "id": 220,
+    "name": "Togo",
+    "region_id": 1,
+    "translations": { "pt-BR": "Togo" }
+  },
+  {
+    "id": 221,
+    "name": "Tokelau",
+    "region_id": 5,
+    "translations": { "pt-BR": "Tokelau" }
+  },
+  {
+    "id": 222,
+    "name": "Tonga",
+    "region_id": 5,
+    "translations": { "pt-BR": "Tonga" }
+  },
+  {
+    "id": 223,
+    "name": "Trinidad and Tobago",
+    "region_id": 2,
+    "translations": { "pt-BR": "Trinidad e Tobago" }
+  },
+  {
+    "id": 224,
+    "name": "Tunisia",
+    "region_id": 1,
+    "translations": { "pt-BR": "Tunísia" }
+  },
+  {
+    "id": 225,
+    "name": "Turkey",
+    "region_id": 3,
+    "translations": { "pt-BR": "Turquia" }
+  },
+  {
+    "id": 226,
+    "name": "Turkmenistan",
+    "region_id": 3,
+    "translations": { "pt-BR": "Turcomenistão" }
+  },
+  {
+    "id": 227,
+    "name": "Turks and Caicos Islands",
+    "region_id": 2,
+    "translations": { "pt-BR": "Ilhas Turcas e Caicos" }
+  },
+  {
+    "id": 228,
+    "name": "Tuvalu",
+    "region_id": 5,
+    "translations": { "pt-BR": "Tuvalu" }
+  },
+  {
+    "id": 229,
+    "name": "Uganda",
+    "region_id": 1,
+    "translations": { "pt-BR": "Uganda" }
+  },
+  {
+    "id": 230,
+    "name": "Ukraine",
+    "region_id": 4,
+    "translations": { "pt-BR": "Ucrânia" }
+  },
+  {
+    "id": 231,
+    "name": "United Arab Emirates",
+    "region_id": 3,
+    "translations": { "pt-BR": "Emirados árabes Unidos" }
+  },
+  {
+    "id": 232,
+    "name": "United Kingdom",
+    "region_id": 4,
+    "translations": { "pt-BR": "Reino Unido" }
+  },
+  {
+    "id": 233,
+    "name": "United States",
+    "region_id": 2,
+    "translations": { "pt-BR": "Estados Unidos" }
+  },
+  {
+    "id": 234,
+    "name": "United States Minor Outlying Islands",
+    "region_id": 2,
+    "translations": { "pt-BR": "Ilhas Menores Distantes dos Estados Unidos" }
+  },
+  {
+    "id": 235,
+    "name": "Uruguay",
+    "region_id": 2,
+    "translations": { "pt-BR": "Uruguai" }
+  },
+  {
+    "id": 236,
+    "name": "Uzbekistan",
+    "region_id": 3,
+    "translations": { "pt-BR": "Uzbequistão" }
+  },
+  {
+    "id": 237,
+    "name": "Vanuatu",
+    "region_id": 5,
+    "translations": { "pt-BR": "Vanuatu" }
+  },
+  {
+    "id": 238,
+    "name": "Vatican City State (Holy See)",
+    "region_id": 4,
+    "translations": { "pt-BR": "Vaticano" }
+  },
+  {
+    "id": 239,
+    "name": "Venezuela",
+    "region_id": 2,
+    "translations": { "pt-BR": "Venezuela" }
+  },
+  {
+    "id": 240,
+    "name": "Vietnam",
+    "region_id": 3,
+    "translations": { "pt-BR": "Vietnã" }
+  },
+  {
+    "id": 241,
+    "name": "Virgin Islands (British)",
+    "region_id": 2,
+    "translations": { "pt-BR": "Ilhas Virgens Britânicas" }
+  },
+  {
+    "id": 242,
+    "name": "Virgin Islands (US)",
+    "region_id": 2,
+    "translations": { "pt-BR": "Ilhas Virgens Americanas" }
+  },
+  {
+    "id": 243,
+    "name": "Wallis and Futuna Islands",
+    "region_id": 5,
+    "translations": { "pt-BR": "Wallis e Futuna" }
+  },
+  {
+    "id": 244,
+    "name": "Western Sahara",
+    "region_id": 1,
+    "translations": { "pt-BR": "Saara Ocidental" }
+  },
+  {
+    "id": 245,
+    "name": "Yemen",
+    "region_id": 3,
+    "translations": { "pt-BR": "Iêmen" }
+  },
+  {
+    "id": 246,
+    "name": "Zambia",
+    "region_id": 1,
+    "translations": { "pt-BR": "Zâmbia" }
+  },
+  {
+    "id": 247,
+    "name": "Zimbabwe",
+    "region_id": 1,
+    "translations": { "pt-BR": "Zimbabwe" }
+  }
+]
