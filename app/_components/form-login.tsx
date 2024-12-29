@@ -6,8 +6,8 @@ import { customToast } from '@/lib/custom-toast'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { startTransition, useActionState, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
-import { signUpAction } from '../_actions'
-import { FormLoginSchema, type TFormLoginData } from '../_actions/schema'
+import { signUpAction } from '../_actions/login'
+import { FormLoginSchema, type TFormLoginData } from '../_actions/login/schema'
 
 const FormLogin = () => {
   const [formState, formAction, isPending] = useActionState(

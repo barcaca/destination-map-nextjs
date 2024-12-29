@@ -10,7 +10,7 @@ import { customToast } from '@/lib/custom-toast'
 import { HeartIcon, LogOutIcon } from 'lucide-react'
 import Link from 'next/link'
 import { useActionState, useEffect } from 'react'
-import { logoutAction } from '../_actions'
+import { logoutAction } from '../_actions/login'
 
 export type User = {
   id: string
