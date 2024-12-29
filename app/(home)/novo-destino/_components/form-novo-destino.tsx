@@ -80,7 +80,9 @@ const FormNovoDestino = () => {
   useEffect(() => {
     if (formState) {
       customToast(formState)
-      formState.status < 400 && reset()
+      if (formState.status < 400) {
+        reset()
+      }
     }
   }, [formState, reset])
 
