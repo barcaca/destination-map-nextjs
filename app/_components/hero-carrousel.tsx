@@ -39,7 +39,7 @@ const HeroCarrousel = () => {
             return (
               <CarouselItem key={slide.id}>
                 <div className="relative overflow-hidden rounded-lg p-1">
-                  <div className="relative h-[80vh] w-full overflow-hidden rounded-xl">
+                  <div className="relative h-[60vh] w-full overflow-hidden rounded-xl lg:h-[80vh]">
                     <Image
                       src={slide.image}
                       alt={slide.alt}

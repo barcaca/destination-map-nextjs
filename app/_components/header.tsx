@@ -16,7 +16,9 @@ const Header = () => {
           >
             Home
           </Link>
-          <p className="font-heading font-semibold">Destination Map</p>
+          <p className="font-heading font-semibold text-sm md:text-base">
+            Destination Map
+          </p>
           <div className="flex items-center gap-4">
             <Button variant="secondary" className="p-1 font-heading" asChild>
               <Link href="/novo-destino">

@@ -69,7 +69,7 @@ const ContinentsWrapper = async () => {
         className="container mx-auto space-y-6 px-4 py-16 sm:px-6 lg:px-8"
       >
         <div className="w-full">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col items-center justify-between gap-2 md:flex-row">
             <h2
               id="continents-heading"
               className="inline-flex items-center gap-2 font-bold text-3xl tracking-tight sm:text-4xl"
