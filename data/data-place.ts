@@ -10,3 +10,12 @@ export async function fetchPlaces(): Promise<Place[]> {
 
   return places
 }
+
+export async function fetchPlaceById(id: string): Promise<Place> {
+  const url = `${BASE_URL.REST}${ENDPOINTS.PLACES}/${id}`
+
+  const response = await fetch(url)
+  const place: Place = await response.json()
+
+  return place
+}
