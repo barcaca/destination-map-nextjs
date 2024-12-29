@@ -19,3 +19,12 @@ export async function fetchPlaceById(id: string): Promise<Place> {
 
   return place
 }
+
+export async function fetchUserPlaces(userId: string): Promise<Place[]> {
+  const url = `${BASE_URL.REST}${ENDPOINTS.PLACES}?user_id=${userId}`
+
+  const response = await fetch(url)
+  const places: Place[] = await response.json()
+
+  return places
+}
