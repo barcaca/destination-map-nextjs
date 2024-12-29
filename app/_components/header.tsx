@@ -1,8 +1,13 @@
 import { Button } from '@/components/ui/button'
+import { verifySession } from '@/lib/dal'
 import { PlusIcon } from 'lucide-react'
 import Link from 'next/link'
+import { FormLogin } from './form-login'
+import { FormPopover } from './form-popover'
+import { UserAvatar } from './user-avatar'
 
-const Header = () => {
+const Header = async () => {
+  const session = await verifySession()
   return (
     <header className="absolute top-0 z-50 w-full text-background">
       <div className="container mx-auto flex h-14 px-4 sm:px-6 lg:px-8">
@@ -25,11 +30,13 @@ const Header = () => {
                 <PlusIcon className="size-5" aria-hidden="true" /> Novo Destino
               </Link>
             </Button>
-            {/* {session?.isAuth ? (
+            {session?.isAuth ? (
               <UserAvatar user={{ id: session.userId, email: session.email }} />
             ) : (
-              <LoginForm />
-            )} */}
+              <FormPopover>
+                <FormLogin />
+              </FormPopover>
+            )}
           </div>
         </nav>
       </div>
