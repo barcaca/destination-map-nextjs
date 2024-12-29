@@ -24,7 +24,7 @@ export default function RootLayout({
       lang="en"
       className={`${happy_monkey.variable} ${montserrat.variable} h-full scroll-smooth`}
     >
-      <body className="flex h-full w-full flex-col">
+      <body className="flex h-full min-h-screen w-full flex-col">
         <Header />
         <HeroCarrousel />
         {children}
