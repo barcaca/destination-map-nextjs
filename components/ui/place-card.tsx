@@ -58,7 +58,7 @@ const PlaceCard = ({ place }: PlaceCardProps) => {
           {place.description}
         </p>
       </div>
-      <Link href={'/destino/'} className="absolute inset-0 z-30">
+      <Link href={`/destino/${place.id}`} className="absolute inset-0 z-30">
         <span className="sr-only">Ver detalhes de {place.title}</span>
       </Link>
     </div>
