@@ -1,8 +1,9 @@
 import placeHolder from '@/public/placeholder-image.svg'
 import type { Place } from '@/types/place'
-import { HeartIcon, Trash2Icon } from 'lucide-react'
+import { HeartIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { DialogDeleteDestino } from '../form-delete-destino'
 import { DialogEditDestino } from '../form-edit-destino'
 import { Button } from './button'
 
@@ -44,19 +45,7 @@ const PlaceCard = ({ place, userId }: PlaceCardProps) => {
         {isUser && (
           <>
             <DialogEditDestino place={place} />
-            <Button
-              variant="ghost"
-              size="icon"
-              aria-label="Editar"
-              className={
-                'group/favorite h-8 w-8 rounded-full bg-muted/60 text-muted-foreground/50 hover:bg-muted/90 '
-              }
-            >
-              <Trash2Icon
-                className="fill-current text-current group-hover/favorite:fill-destructive/50 group-hover/favorite:text-destructive"
-                aria-hidden="true"
-              />
-            </Button>
+            <DialogDeleteDestino placeId={place.id} />
           </>
         )}
       </div>
