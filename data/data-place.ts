@@ -36,3 +36,11 @@ export async function fetchUserPlaces(userId: string): Promise<Place[]> {
 
   return places
 }
+
+export async function fetchContinentsPlaces(continent: string) {
+  const url = `${BASE_URL.REST}${ENDPOINTS.PLACES}?user_id=SYSTEM&location.continent.name=${continent}`
+  const response = await fetch(url)
+  const places: Place[] = await response.json()
+
+  return places
+}
