@@ -11,6 +11,14 @@ export async function fetchPlaces(): Promise<Place[]> {
   return places
 }
 
+export async function fetchAllPlaces(): Promise<Place[]> {
+  const url = `${BASE_URL.REST}${ENDPOINTS.PLACES}`
+  const response = await fetch(url)
+  const places: Place[] = await response.json()
+
+  return places
+}
+
 export async function fetchPlaceById(id: string): Promise<Place> {
   const url = `${BASE_URL.REST}${ENDPOINTS.PLACES}/${id}`
 

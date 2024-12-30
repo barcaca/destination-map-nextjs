@@ -1,11 +1,6 @@
 'use client'
 
 import {
-  addUserFavorite,
-  fetchUserFavorites,
-  removeUserFavorite,
-} from '@/data/data-favorite'
-import {
   addFavoriteDestinationAction,
   getFavoriteDestinationAction,
   removeFavoriteDestinationAction,
@@ -36,48 +31,47 @@ export interface StateContext {
 }
 
 const initialState: StateContext = {
-  favorites: {
-    id: '',
-    user_id: '',
-    place_id: [
-      {
-        value: '',
-      },
-    ],
-  },
+  favorites: [],
 }
 
+const USER_FAVORITE_KEY = '@destination-map:favorite'
 interface FavoritesProviderProps {
   children: ReactNode
-  userId: string | null
 }
 
-export function FavoritesProvider({
-  children,
-  userId,
-}: FavoritesProviderProps) {
+export function FavoritesProvider({ children }: FavoritesProviderProps) {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   useEffect(() => {
-    async function getPlaces() {
-      const favorites = await fetchUserFavorites(userId as string)
-      dispatch(getFavoriteDestinationAction(favorites))
+    const storedFavorite = localStorage.getItem(USER_FAVORITE_KEY)
+    if (storedFavorite) {
+      dispatch(getFavoriteDestinationAction(JSON.parse(storedFavorite)))
+    } else {
+      dispatch(getFavoriteDestinationAction([]))
+      localStorage.setItem(USER_FAVORITE_KEY, JSON.stringify(initialState))
     }
-
-    if (userId) {
-      getPlaces()
-    }
-  }, [userId])
+  }, [])
 
   const addFavorite = async (placedId: string) => {
     dispatch(addFavoriteDestinationAction(placedId))
-    await addUserFavorite(userId as string, placedId)
   }
 
   const removeFavorite = async (placeId: string) => {
     dispatch(removeFavoriteDestinationAction(placeId))
-    await removeUserFavorite(userId as string, placeId)
   }
+
+  const buscarPlaces = async (favorites: string[]) => {}
+
+  const saveToLocalStorage = (key: string, data: Favorites) => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem(key, JSON.stringify(data))
+    }
+  }
+
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
+  useEffect(() => {
+    saveToLocalStorage(USER_FAVORITE_KEY, state.favorites)
+  }, [state.favorites])
 
   const values = { state, addFavorite, removeFavorite }
 

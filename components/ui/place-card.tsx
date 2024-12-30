@@ -16,9 +16,7 @@ interface PlaceCardProps {
 
 const PlaceCard = ({ place, userId }: PlaceCardProps) => {
   const { state, addFavorite, removeFavorite } = useFavorite()
-  const isFavorite = state.favorites.place_id.some(
-    fav => fav.value === place.id
-  )
+  const isFavorite = state.favorites.some(val => val === place.id)
   const { location } = place
   const isUser = userId === place.user_id
 

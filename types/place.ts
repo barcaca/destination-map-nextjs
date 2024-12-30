@@ -12,10 +12,4 @@ export type Place = {
   favorite: boolean
 }
 
-export type Favorites = {
-  id: string
-  user_id: string
-  place_id: {
-    value: string
-  }[]
-}
+export type Favorites = string[]

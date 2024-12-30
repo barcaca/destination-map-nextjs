@@ -6,30 +6,24 @@ export function reducer(state: StateContext, action: Actions): StateContext {
     case ActionTypes.GET_FAVORITE_DESTINATION:
       return {
         ...state,
-        favorites: {
-          ...state.favorites,
-          place_id: action.payload,
-        },
+        favorites: action.payload, // Atualiza a lista de favoritos diretamente com o array de strings
       }
+
     case ActionTypes.ADD_FAVORITE_DESTINATION:
       return {
         ...state,
-        favorites: {
-          ...state.favorites,
-          place_id: [...state.favorites.place_id, { value: action.payload }],
-        },
+        favorites: [...state.favorites, action.payload], // Adiciona o novo favorito (string) ao array
       }
+
     case ActionTypes.REMOVE_FAVORITE_DESTINATION:
       return {
         ...state,
-        favorites: {
-          ...state.favorites,
-          place_id: state.favorites.place_id.filter(
-            place => place.value !== action.payload
-          ),
-        },
+        favorites: state.favorites.filter(
+          placeId => placeId !== action.payload // Remove o favorito correspondente
+        ),
       }
+
     default:
-      return state
+      return state // Retorna o estado atual se a ação não for reconhecida
   }
 }

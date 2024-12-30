@@ -15,9 +15,7 @@ export type Actions =
     }
   | {
       type: ActionTypes.GET_FAVORITE_DESTINATION
-      payload: {
-        value: string
-      }[]
+      payload: string[]
     }
 
 export const addFavoriteDestinationAction = (placeId: string) =>
@@ -32,11 +30,7 @@ export const removeFavoriteDestinationAction = (placeId: string) =>
     payload: placeId,
   }) satisfies Actions
 
-export const getFavoriteDestinationAction = (
-  placeIds: {
-    value: string
-  }[]
-) =>
+export const getFavoriteDestinationAction = (placeIds: string[]) =>
   ({
     type: ActionTypes.GET_FAVORITE_DESTINATION,
     payload: placeIds,
