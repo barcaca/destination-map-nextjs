@@ -40,7 +40,7 @@ Este projeto é uma aplicação desenvolvida para o desafio AluraFlix, voltada p
 
 ## 🏆 Conclusão
 
-Criar o Destination Map para o desafio AluraGeek foi uma experiência valiosa, na qual aprendi:
+Criar o Destination Map para o desafio AluraFlix foi uma experiência valiosa, na qual aprendi:
 
 - Desenvolvimento de uma aplicação interativa e eficiente utilizando Next.js.
 - Aplicação de Tailwind CSS para uma estilização ágil e responsiva.
