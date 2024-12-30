@@ -1,3 +1,5 @@
+'use client'
+import { deleteDestinoAction } from '@/app/_actions/delete-destino'
 import {
   Dialog,
   DialogClose,
@@ -8,27 +10,42 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog'
-import { deleteUserPlace } from '@/data/data-place'
+import { customToast } from '@/lib/custom-toast'
 import { Trash2Icon } from 'lucide-react'
-import { redirect } from 'next/navigation'
+import { useRouter } from 'next/navigation'
+import { startTransition, useActionState, useEffect } from 'react'
 import { Button } from './ui/button'
 
 const DialogDeleteDestino = ({ placeId }: { placeId: string }) => {
-  async function handleDeleteDestino() {
-    'use server'
-    await deleteUserPlace(placeId)
-    redirect('/')
+  const router = useRouter()
+  const [formState, formAction, isPending] = useActionState(
+    deleteDestinoAction,
+    undefined
+  )
+
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    startTransition(() => formAction(placeId))
   }
+
+  useEffect(() => {
+    if (formState) {
+      customToast(formState)
+      if (formState.redirect) {
+        router.push(formState.redirect)
+      }
+    }
+  }, [formState, router])
 
   return (
     <Dialog>
       <DialogTrigger asChild>
         <Button
-          variant="ghost"
+          variant="outline"
           size="icon"
           aria-label="Editar"
           className={
-            'group/favorite h-8 w-8 rounded-full bg-muted/60 text-muted-foreground/50 hover:bg-muted/90 '
+            'group/favorite h-8 w-8 rounded-full bg-muted/40 text-muted-foreground/50 hover:bg-muted/90 '
           }
         >
           <Trash2Icon
@@ -48,8 +65,8 @@ const DialogDeleteDestino = ({ placeId }: { placeId: string }) => {
           <DialogClose asChild>
             <Button variant={'outline'}>Cancelar</Button>
           </DialogClose>
-          <form action={handleDeleteDestino}>
-            <Button variant={'destructive'} type="submit">
+          <form onSubmit={onSubmit}>
+            <Button variant={'destructive'} type="submit" disabled={isPending}>
               Deletar
             </Button>
           </form>

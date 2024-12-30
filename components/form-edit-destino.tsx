@@ -211,11 +211,11 @@ const DialogEditDestino = ({ place }: { place: Place }) => {
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button
-          variant="ghost"
+          variant="outline"
           size="icon"
           aria-label="Editar"
           className={
-            'group/favorite h-8 w-8 rounded-full bg-muted/60 text-muted-foreground/50 hover:bg-muted/90'
+            'group/favorite h-8 w-8 rounded-full bg-muted/40 text-muted-foreground/50 hover:bg-muted/90'
           }
         >
           <PenIcon className="fill-current text-current" aria-hidden="true" />
