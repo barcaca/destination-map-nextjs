@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Destination Map
+Este projeto é uma aplicação desenvolvida para o desafio AluraFlix, voltada para o gerenciamento e visualização de destinos de viagem. O Destination Map permite aos usuários explorar e salvar destinos com uma interface intuitiva e moderna.## Indice
+- 🖼️ [Screenshot](#-screenshot)
+- 🛠️ [Tecnologias](#-tecnologias)
+- 🏗️ [Funcionalidades](#-funcionalidades)
+- 🔗 [Links](#-links)
+- 🏆 [Conclusão](#-conclusão)
+- 📚 [Recursos úteis](#-recursos-úteis)
+- 👤 [Autor](#-autor)
+- 📜 [Licença](#-licença)
+## 🖼️ Screenshots
 
-## Getting Started
+![Thumbnail](/public/thumbnail.png)
+## 🛠️ Tecnologias
 
-First, run the development server:
+**Front-end:**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Next.js](https://img.shields.io/badge/Next.js-%23000000?style=for-the-badge&logo=next.js&logoColor=white)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![React](https://img.shields.io/badge/React-%2361DAFB?style=for-the-badge&logo=react&logoColor=black)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![TypeScript](https://img.shields.io/badge/TypeScript-%233178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
-## Learn More
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-%2306B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-To learn more about Next.js, take a look at the following resources:
+![Shadcn UI](https://img.shields.io/badge/Shadcn_UI-%23000000?style=for-the-badge&logo=shadcnui&logoColor=white)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Biome](https://img.shields.io/badge/Biome-%2360A5FA?style=for-the-badge&logo=biome&logoColor=white)
+## 🏗️ Funcionalidades
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Exibição informações do destino.
+- Formulário de criação de destino.
+- Interface responsiva e intuitiva, adaptada para dispositivos móveis.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔗 Links
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Live Site URL](https://destination-map-nextjs.vercel.app)
+
+## 🏆 Conclusão
+
+Criar o Destination Map para o desafio AluraGeek foi uma experiência valiosa, na qual aprendi:
+
+- Desenvolvimento de uma aplicação interativa e eficiente utilizando Next.js.
+- Aplicação de Tailwind CSS para uma estilização ágil e responsiva.
+- Implementação de recursos como pesquisa em tempo real e exibição detalhada de informações sobre destinos.
+## 📚 Recursos úteis
+
+- [Documentação do  **Next.js:**](https://nextjs.org/docs)
+- [Documentação do **Tailwind CSS**](https://tailwindcss.com/docs)
+- [Documentação do **TypeScript**](https://www.typescriptlang.org/docs/)
+- [Documentação do **Shadcn UI**](https://ui.shadcn.com/docs)
+
+## 👤 Autor
+
+- [@barcaca](https://www.github.com/barcaca)
+
+
+## 📜 Licença
+
+[MIT]()
+
