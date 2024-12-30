@@ -59,5 +59,5 @@ Criar o Destination Map para o desafio AluraFlix foi uma experiência valiosa, n
 
 ## 📜 Licença
 
-[MIT]()
+This project is open source and available under the [MIT License](LICENSE).
 
