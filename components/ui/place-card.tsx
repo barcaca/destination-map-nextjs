@@ -1,3 +1,5 @@
+'use client'
+import { useFavorite } from '@/context/favorites-context'
 import placeHolder from '@/public/placeholder-image.svg'
 import type { Place } from '@/types/place'
 import { HeartIcon } from 'lucide-react'
@@ -13,9 +15,20 @@ interface PlaceCardProps {
 }
 
 const PlaceCard = ({ place, userId }: PlaceCardProps) => {
-  const isFavorite = false
+  const { state, addFavorite, removeFavorite } = useFavorite()
+  const isFavorite = state.favorites.place_id.some(
+    fav => fav.value === place.id
+  )
   const { location } = place
   const isUser = userId === place.user_id
+
+  const toggleFavorite = () => {
+    if (isFavorite) {
+      removeFavorite(place.id)
+      return
+    }
+    addFavorite(place.id)
+  }
 
   return (
     <div className="group relative flex w-full overflow-hidden rounded-xl shadow-shape">
@@ -31,6 +44,7 @@ const PlaceCard = ({ place, userId }: PlaceCardProps) => {
             isFavorite ? 'Remover dos favoritos' : 'Adicionar aos favoritos'
           }
           className={`group/favorite h-8 w-8 rounded-full ${isFavorite ? 'bg-muted text-muted-foreground' : 'bg-muted/60 text-muted-foreground/50'} hover:bg-muted/90`}
+          onClick={toggleFavorite}
         >
           <HeartIcon
             className={

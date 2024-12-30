@@ -1,11 +1,16 @@
-import { Button } from '@/components/ui/button'
+import { DialogDeleteDestino } from '@/components/form-delete-destino'
+import { DialogEditDestino } from '@/components/form-edit-destino'
 import { Skeleton } from '@/components/ui/skeleton'
 import { fetchPlaceById } from '@/data/data-place'
-import { Globe2Icon, HeartIcon } from 'lucide-react'
+import { verifySession } from '@/lib/dal'
+import { Globe2Icon } from 'lucide-react'
 import Image from 'next/image'
+import { PlaceItemButtons } from './place-item-buttons'
 
 const PlaceItem = async ({ destinoId }: { destinoId: string }) => {
+  const session = await verifySession()
   const place = await fetchPlaceById(destinoId)
+  const isUser = session?.userId === place.user_id
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -19,27 +24,14 @@ const PlaceItem = async ({ destinoId }: { destinoId: string }) => {
             </span>
           </div>
         </div>
-        <div className="flex gap-2">
-          <Button
-            variant="outline"
-            size="icon"
-            aria-label={
-              place.favorite
-                ? 'Remover dos favoritos'
-                : 'Adicionar aos favoritos'
-            }
-            className={`group/favorite z-40 h-8 w-8 rounded-full ${place.favorite ? 'bg-muted text-muted-foreground' : 'bg-muted/40 text-muted-foreground/50'} hover:bg-muted/90`}
-          >
-            <HeartIcon
-              className={
-                place.favorite
-                  ? 'text-red-500'
-                  : 'fill-current text-current group-hover/favorite:text-red-500'
-              }
-              aria-hidden="true"
-            />
-          </Button>
-        </div>
+        <PlaceItemButtons place={place}>
+          {isUser && (
+            <>
+              <DialogEditDestino place={place} />
+              <DialogDeleteDestino placeId={place.id} />
+            </>
+          )}
+        </PlaceItemButtons>
       </header>
       <section className="mb-8 grid gap-4 lg:h-[500px] lg:grid-cols-3">
         <figure className="relative h-[242px] overflow-hidden rounded-lg lg:col-span-2 lg:h-auto">
